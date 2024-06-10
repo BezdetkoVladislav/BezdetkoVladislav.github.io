@@ -1,0 +1,200 @@
+@font-face {
+    font-family: "seoulhangangCbl";
+    src: local("SeoulHangang CBL Regular.ttf") format ('truetype');
+   font-weight: normal;
+   font-style: normal;
+    font-family: "Kurale-Regular";
+    src: local("Kurale-Regular") format ('truetype');
+}
+p, a, h1, h2 {
+    font-family: "Kurale-Regular", serif;
+}
+
+body {
+    background-color: #FFE8C5 !important;
+
+}
+
+#root {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 1410px) {
+    #main-content {
+        flex-direction: column !important;
+        padding: 5px !important;
+    }
+    
+}
+@media screen and (max-width: 650px) {
+    #main-content {
+        min-width: 320px !important;
+        button {
+            font-size: 24px !important;
+            padding: 10px 25px !important;
+        }
+        input {
+            min-width: 260px !important;
+            font-size: 20px !important;
+        }
+        h2 {
+            font-size: 24px !important;
+            margin-left: 15px !important;
+        }
+    }
+    #register {
+        margin: 15px !important;
+        padding: 10px 15px 5px 15px !important;
+        min-width: 305px !important;
+        h1 {
+            font-size: 35px !important;
+            margin-left: 20px !important;
+        }
+        button {
+            margin-top: 0 !important;
+            margin-bottom: 10px !important;
+        }
+        p {
+            font-size: 20px !important;
+        }
+    }
+    #right-block {
+        margin: 15px !important;
+    }
+    #authorization {
+        min-width: 305px !important;
+        padding: 10px 15px 5px 15px !important;
+        h1 {
+            font-size: 30px !important;
+        }
+        h2 {
+            font-size: 20px !important;
+        }
+    }
+    #forgor {
+        min-width: 305px !important;
+        padding: 10px 15px 5px 15px !important;
+    }
+}
+#main-content {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    padding: 20px;
+    h1, h2, p {
+        font-family:"Kurale-Regular", serif;
+        margin-top: 10px;
+        color: black;
+    }
+    h1 {
+        font-size: 55px;
+        margin-top: 0;
+    }
+    h2 {
+        margin-left: 45px;
+    }
+}
+
+#main-content > div{
+    margin: 30px;
+}
+
+#register {
+    display: block;
+    background: white;
+    border-radius: 32px;
+    padding: 10px 25px 5px 35px;
+    max-width: 1060px;
+    min-width: 605px;
+}
+
+#right-block {
+    display: block;
+    text-align: center;
+}
+
+#right-block > div:first-child{
+    margin-bottom: 45px;
+}
+
+#authorization, #forgor {
+    display: block;
+    background: white;
+    border-radius: 32px;
+    padding: 10px 25px 5px 35px;
+    min-width: 605px;
+}
+
+#forgor > h2 {
+    margin-left: 0;
+}
+
+#register > h1 {
+    margin-left: 15%;
+    margin-bottom: 0;
+}
+
+#authorization > h1 {
+    margin-bottom: 0;
+}
+
+#register > button, #authorization > button, #forgor > button {
+    margin-top: 25px;
+    margin-bottom: 33px;
+    font-size: 30px;
+    border-radius: 25px;
+    padding: 10px 55px;
+    background: #FFDCA9;
+    font-family: "Kurale-Regular", serif;
+    color: black;
+}
+#register > p {
+    margin-top: 12px;
+    font-size: 24px;
+    color: #757575;
+}
+
+#reg-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;   
+}
+
+#reg-form, #auth-form {
+    input {
+        border-radius: 25px;
+        font-size: 24px;
+        padding: 5px 12px 5px 12px;
+    }
+    div {
+        margin-bottom: 20px;
+    }
+}
+
+#auth-form {
+    text-align: initial;
+}
+.text-input, .phone-input {
+    min-width: 600px;
+}
+
+.text-input > input {
+    min-width: 400px;
+}
+
+.text-input:first-child {
+    min-width: 400px;
+    input {
+        min-width: 350px;
+    }
+}
+
+#reg-form > div > .email-input {
+    margin:0px 35px 0 50px;
+}
+
+.email-input > input, .phone-input > input {
+    min-width: 500px;
+}

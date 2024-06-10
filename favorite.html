@@ -1,0 +1,145 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="top-bar.css" type="text/css">
+  <link rel="stylesheet" href="favorite.css" type="text/css">
+  <link rel="stylesheet" href="bootstrap.css" type="text/css">
+  <title>Browser</title>
+</head>
+
+
+<body>
+  <div id ='root'>
+    <div id = 'top-menu'>
+      <div id = 'field-bar'>
+        <img src = "Group 1menbut.png" style = "margin-left: 28px;">
+        <a href='Films.html'>Фільми</a>
+        <a href='Actor-creator.html'>Кінотеатри</a>
+        <a  href=''>Технології</a>
+        <a href="Users.html">Про нас</a>
+      </div>
+      <div id = 'logo-bar'>
+          <img src = 'image 3Logo.png' style = 'max-width: 180px; max-height: 87px;'>
+      </div>
+      <div id = 'user-bar'>
+          <div id = 'for_city' class="for_city" style="display: flex; height: 100%; align-items: center; align-content: center; position: relative;">
+            <p style="margin:0 10px 0 0;">м.Одеса, вул.Так, 12</p>
+            <img src="Group 2dugaa.png" style="height: 14px;">
+            <div id = 'city-drop' class='city-drop'>
+              <div style="display: block; justify-content: space-between;">
+                <p style="color:black; font-weight: bold;">Оберіть місто</p>
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="Місто"  list = 'cities'>
+                  <datalist id = 'cities'>
+                    <option>м.Одеса</option> 
+                    <option>м.Київ</option>
+                    <option>м.Львів</option>
+                  </datalist>
+                </div>
+                <p style="color:black; font-weight: bold; margin-top: 10px;">Оберіть кінотеатр</p>
+              </div>
+              <div style="border: 1px solid black; width: 100%; height: auto; margin-top: 10px; height: 67%; overflow: auto; overflow-y: scroll;">
+                <table style="overflow-y: auto; overflow-x: hidden; width: 100%;">
+                  <tbody id = "city-table">
+                    <tr>
+                      <td style='font-family: "Kurale-Regular", serif; font-size: 24px;'>Таїрово</th>
+                    </tr>
+                    <tr>
+                      <td style='font-family: "Kurale-Regular", serif; font-size: 24px;'>Котовський</th>
+                    </tr>
+                    <tr>
+                      <td style='font-family: "Kurale-Regular", serif; font-size: 24px;'>Плаза</th>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <a>Вхід</a>
+          <a>Реєстрація</a>
+          <img src="UserLogouserlogo.png">
+      </div>
+    </div>
+    <div id = 'side-nav-bar'>
+      <div style="display: flex; align-items: center;">
+        <img src="DecorElementsFilters1.png" style="margin-left: 28px; padding-top: 10px;">
+        <h2>Меню навігації</h2>
+      </div>
+      <ul>
+        <li><a href='Main-page.html'>Фільми</a></li>
+        <li><a href=''>Кінотеатри</a></li>
+        <li><a href=''>Технології</a></li>
+        <li><a href=''>Про нас</a></li>
+      </ul>
+    </div>
+
+    <div id = 'main-content'>
+      <div id = 'pages-bar'>
+        <p id = 'page-path'>Мій профіль -> Мої вподобання</p>
+      </div>  
+      <div id = 'favorites-block'>
+        <div id = 'page-name'>
+          <div>
+            <img src = 'UserLogo.png'>
+            <h1 style="margin-left: 30px; margin-top: 20px;">Мої вподобання</h1>
+          </div>
+          <div>
+            <input type="checkbox" class="checkbox-round" style="margin: 20px 5px 0 35px;">
+            <h2 for="Вподобання" style="margin-left: 15px; margin-top: 20px;margin-bottom: 0; font-size: 35px; font-family: 'Kurale-Regular', serif;font-weight: normal ;white-space: nowrap;">Сповіщати про фільми до вподоби</h2><br>
+          </div>
+        </div>
+        <div id = 'contents'>
+          <div class = "tag-list filter-tags">
+            <div> <p>Екшн</p><button class= "tag-cross">X</button> </div>
+            <div> <p>16+</p><button class= "tag-cross">X</button> </div>
+            <div> <p>Драма</p><button class= "tag-cross">X</button> </div>
+            <div> <p>Пригоди</p><button class= "tag-cross">X</button> </div>
+            <div> <p>Фентезі</p><button class= "tag-cross">X</button> </div>
+            <div> <p>Трилер</p><button class= "tag-cross">X</button> </div>
+          </div>
+        </div>
+        <div id = 'add-new'>
+          <div>
+            <h2>Додати нове вподобання</h2>
+            <button id = 'add-button'>+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id = 'add-screen'>
+      <div id = 'add-search'>
+        <h2>Додати теги</h2>
+        <div class="input-group mb-3" style="display: flex;">
+          <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2" list="myL">
+          <div class="input-group-append" >
+              <button id = 'city-butt' style="height: 34px;" type="button">Додати</button>
+          </div>
+          <datalist id = 'myL'>
+            <option>Комедія</option> 
+            <option>Екшн</option>
+            <option>Драма</option>
+          </datalist>
+        </div>
+      </div>
+      <div id = 'add-contents'>
+        <div class = "tag-list filter-tags">
+          <div> <p>Комедія</p><button class= "tag-cross">X</button> </div>
+          <div> <p>Драма</p><button class= "tag-cross">X</button> </div>
+        </div>
+      </div>
+      <div id = 'add-buttons'>
+        <button>Збросити</button>
+        <button>Зберегти</button>
+      </div>
+    </div>
+    <footer id = "feet">
+      <div></div>
+      <p>@2024</p>
+    </footer>
+  </div>
+   
+  <script defer src = 'top-part.js'></script>
+  <script defer src = 'favorites.js'></script>
+</body>

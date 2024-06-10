@@ -1,0 +1,154 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="actor.css" />
+  <title>Browser</title>
+</head>
+
+<body style="margin: 0px;">
+  <div id="root">
+  	<div class = 'top-menu'>
+      <div class = "navmenu" style="display: flex;">
+        <img src="threebars_106419.png" style="width:60px; margin-left: 12px;
+        height:70px;">
+      </div>
+      <div class = "logo" style="display: flex; justify-content: center;">
+        <h1 style="position: relative; bottom: 10%;">Logo</h1>
+      </div>
+      <div class = "navmenu" style="display: flex; justify-content: flex-end; margin-right: 50px;">
+        <h1 style="position: relative; bottom: 10%; margin-right: 20px; ">Мій профіль</h1>
+        <img src="profile-circle-icon-256x256-ssviou3i.png" style="width:50px;
+        height:50px; position: relative; top: 10%;">
+      </div>
+    </div>
+
+    <div class = 'main'>
+      <div class = 'selection_menu'>
+        <h1 style="font-size: 30px; display: flex; color: white;  margin-left: 25px; ">Меню навігації</h1>
+        <nav style="position: relative; margin-left: 15px;     margin-bottom: 125px; display: block;" >
+          <a class="ssssss" href='Films.html'>Фільми</a>
+          <a class="ssssss" href='Actor-creator.html'>Актори та знімальна група</a>
+          <a class="ssssss" href=''>Дискусії</a>
+          <a class="ssssss" href="Users.html">Користувачі</a>
+        </nav>
+      </div>
+      <div class = 'main-block'>
+        <div class="HName">
+          <h1>Редагувати члена знімальної групи</h1>
+          <a style="font-size: 25px;  text-decoration: none; color: black;" href="">Повернутися назад</a>
+        </div> 
+        <div id="film-block">
+            <div class = 'first-half' style="display: block; padding-left: 15px; padding-right: 15px;">
+            <div class="ffblock">
+              <div style="margin-right: 20%;">
+                <label for="name"><h1>ПІБ</h1></label>
+                <input type="text" id="name" class = 'second' name="name" style   ="overflow: auto;  margin-bottom: 10px;"><br>
+                <label for="descrp"><h1>Коротка історія</h1></label>
+                <textarea id="descrp" name="descrp" style="width: 35em; max-width: 755px; max-height: 170px; min-width: 300px; min-height: 76px ;"></textarea>
+                <div class = "additional">
+                  <div class = "additionalh">
+                    <h1>Місце народження</h1>
+                    <input list="dir" style="padding: 10px; padding-left: 5px;width: 230px;     margin-bottom: 35px;">
+                      <datalist id = "dir">
+                        <option value="Техас">США</option>
+                        <option value="Сіетл">США</option>
+                        <option value="Вашингтон">США</option>
+                      </datalist>
+                  </div>
+                  <div class = "additionalh">
+                    <h1>Дата народження:</h1>
+                    <input type="date" class = 'numin' id="start" name="trip-start" value="2018-07-22" min="1900-01-01" max="2040-12-31" /><br>
+                  </div>   
+                </div>
+              </div>
+              <div>
+                <label for="obkl"><h1>Обкладинка</h1></label>
+                <div class="container x" style="position: relative; width: 350px; height: 550px; border: solid 1px black;">
+                  <img id = "obkl" src="Morgan_Freeman.webp">
+                  <div class="overlay">
+                    <button style="display: block; margin-top: 60%; ">Змінити фото</button>
+                    <button style="display: block;">Видалити</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sblock">
+                <h1 style="padding-left: 0%;">Фільмографія</h1>
+                <div>
+                  <input list="myUL"  style="padding: 10px; padding-left: 5px;width: 230px;">
+                  <datalist id = 'myUL' >
+                    <option value="ПІБ">Найбільші роботи</option>
+                    <option value="ПІБ">Найбільші роботи</option>
+                    <option value="ПІБ">Найбільші роботи</option>
+                  </datalist>
+                  <select id="rating" name="rating" style="padding: 10px 10px;">     
+                    <option value="rej">Режисер</option>
+                    <option value="scen">Сценарист</option>
+                    <option value="scedsn">Актор</option>
+                  </select>
+                  <input type="text" placeholder ="Роль" style="padding: 10px 10px;">
+                  <button>Додати</button>
+                  <div class="added-actors" style="display: grid; padding-left: 10px; grid-gap: 1px; border: 2px solid #98a1b9; height: 80px; grid-template-columns: 2fr 1fr; grid-auto-rows: 40px; overflow-y: scroll; margin-top: 15px; width: 60%;">
+                    <div style="border-right: 1px solid black; border-bottom: 1px solid black;"><p>Мумія</p> </div> <div style="border-bottom: 1px solid black;"><p>Режисер</p></div>
+                    <div style="border-right: 1px solid black; border-bottom: 1px solid black;"><p>Мумія</p> </div> <div style="border-bottom: 1px solid black;"><p>Актор, Мумія</p></div>
+                  </div>
+                </div>
+            </div>
+            </div>
+          
+            <div class = 'bottom-half'> 
+              <h1> Додати медіафайли</h1>
+              <div class="container" id = 'container1' style="scroll-snap-type: x mandatory; width: 100%; align-content: start;" dir="ltr">
+                <div class="container x" style="position: relative; border-left: 1px dashed  rgb(170, 170, 170); border-right: 1px dashed  rgb(170, 170, 170);">
+                  <img class="placeholder" src = '360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg' style="object-fit: fill;">
+                  <div class="overlay">
+                    <button style="display: block; margin-top: 25%;">Додати фото</button>
+                  </div>
+                </div>
+                <div class="container x" style="position: relative;">
+                  <img src="ghostface-in-scary-movie.avif">
+                  <div class="overlay">
+                    <button style="display: block;">Змінити фото</button>
+                    <button style="display: block;">Видалити</button>
+                  </div>
+                </div>
+                <div class="container x" style="position: relative;">
+                  <img src="Scary-Movie-Ghostface-Gets-High-With-Marlon-Wayans.avif">
+                  <div class="overlay">
+                    <button style="display: block;">Змінитидати фото</button>
+                    <button style="display: block;">Видалити</button>
+                  </div>
+                </div>
+                <div class="container x" style="position: relative;">
+                  <img src="Scary-Movie-Ghostface-Gets-High-With-Marlon-Wayans.avif">
+                  <div class="overlay">
+                    <button style="display: block;">Змінити фото</button>
+                    <button style="display: block;">Видалити</button>
+                  </div>
+                </div>
+                <div class="container x" style="position: relative;">
+                  <img src="Scary-Movie-Ghostface-Gets-High-With-Marlon-Wayans.avif">
+                  <div class="overlay">
+                    <button style="display: block;">Змінити фото</button>
+                    <button style="display: block;">Видалити</button>
+                  </div>
+                </div>
+              </div>
+              <div class='buttons' style='display:flex; justify-content: space-between;'>
+                <button class='acc' style="    padding: 25px 225px; ">
+                  Accept
+                </button>
+                <button class='acc'>
+                  Reset
+                </button>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <footer style="height: 135px;width: 100%; border-top: solid 1px black; display: block; background-color: #8492b3;"><p style="position: relative;left: 50%; top:70%; font-size: 20px; color: white; display: inline;">@2024</p></footer>
+  </div>
+</body>

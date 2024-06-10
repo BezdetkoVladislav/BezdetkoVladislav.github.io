@@ -1,0 +1,143 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="top-bar.css" type="text/css">
+  <link rel="stylesheet" href="registration.css" type="text/css">
+  <link rel="stylesheet" href="bootstrap.css" type="text/css">
+  <title>Browser</title>
+</head>
+
+
+<body>
+  <div id ='root'>
+    <div id = 'top-menu'>
+      <div id = 'field-bar'>
+        <img src = "Group 1menbut.png" style = "margin-left: 28px;">
+        <a href='Films.html'>Фільми</a>
+        <a href='Actor-creator.html'>Кінотеатри</a>
+        <a  href=''>Технології</a>
+        <a href="Users.html">Про нас</a>
+      </div>
+      <div id = 'logo-bar'>
+          <img src = 'image 3Logo.png' style = 'max-width: 180px; max-height: 87px;'>
+      </div>
+      <div id = 'user-bar'>
+          <div id = 'for_city' class="for_city" style="display: flex; height: 100%; align-items: center; align-content: center; position: relative;">
+            <p style="margin:0 10px 0 0;">м.Одеса, вул.Так, 12</p>
+            <img src="Group 2dugaa.png" style="height: 14px;">
+            <div id = 'city-drop' class='city-drop'>
+              <div style="display: block; justify-content: space-between;">
+                <p style="color:black; font-weight: bold;">Оберіть місто</p>
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="Місто"  list = 'cities'>
+                  <datalist id = 'cities'>
+                    <option>м.Одеса</option> 
+                    <option>м.Київ</option>
+                    <option>м.Львів</option>
+                  </datalist>
+                </div>
+                <p style="color:black; font-weight: bold; margin-top: 10px;">Оберіть кінотеатр</p>
+              </div>
+              <div style="border: 1px solid black; width: 100%; height: auto; margin-top: 10px; height: 67%; overflow: auto; overflow-y: scroll;">
+                <table style="overflow-y: auto; overflow-x: hidden; width: 100%;">
+                  <tbody id = "city-table">
+                    <tr>
+                      <td style='font-family: "Kurale-Regular", serif; font-size: 24px;'>Таїрово</th>
+                    </tr>
+                    <tr>
+                      <td style='font-family: "Kurale-Regular", serif; font-size: 24px;'>Котовський</th>
+                    </tr>
+                    <tr>
+                      <td style='font-family: "Kurale-Regular", serif; font-size: 24px;'>Плаза</th>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <a>Вхід</a>
+          <a>Реєстрація</a>
+          <img src="UserLogouserlogo.png">
+      </div>
+    </div>
+    <div id = 'side-nav-bar'>
+      <div style="display: flex; align-items: center;">
+        <img src="DecorElementsFilters1.png" style="margin-left: 28px; padding-top: 10px;">
+        <h2>Меню навігації</h2>
+      </div>
+      <ul>
+        <li><a href='Main-page.html'>Фільми</a></li>
+        <li><a href=''>Кінотеатри</a></li>
+        <li><a href=''>Технології</a></li>
+        <li><a href=''>Про нас</a></li>
+      </ul>
+    </div>
+    
+    <div id = 'main-content'>
+      <div id = 'register'>
+        <h1>Реєстрація</h1>
+        <div>
+          <form id = 'reg-form'>
+            <div class="text-input">
+              <h2>Ім’я</h2>
+              <input type="text">
+            </div>
+            <div class="email-input">
+              <h2>Електрона пошта</h2>
+              <input type="email">
+            </div>
+            <div class="phone-input">
+              <h2>Номер телефону</h2>
+              <input type="text">
+            </div>
+            <div class="text-input">
+              <h2>Пароль</h2>
+              <input type="text">
+            </div>
+            <div class="text-input">
+              <h2>Повторіть пароль</h2>
+              <input type="text">
+            </div>
+          </form>
+        </div>
+        <button>Зареєструватися</button>
+        <p>*Конфіденційні дані користувачів третім сторонам  не передаються </p>
+      </div>
+
+      <div id = 'right-block'>
+        <div id = 'authorization'>
+          <h1>Вже маєте акаунт?</h1>
+          <h2 style="margin: initial;">Увійдіть до нього зараз!</h2>
+          <div>
+            <form id = 'auth-form'>
+              <div class="email-input">
+                <h2>Електрона пошта</h2>
+                <input type="email">
+              </div>
+              <div class="text-input">
+                <h2>Пароль</h2>
+                <input type="text">
+              </div>
+            </form>
+          </div>
+          <button>Авторизація</button>
+        </div>
+
+        <div id = 'forgor'>
+          <h2>Забули пароль від акаунту? Відновіть його 
+            в пару кроків!</h2>
+          <button>Відновлення паролю</button>
+        </div>
+      </div>
+    </div>
+
+    <footer id = "feet">
+      <div></div>
+      <p>@2024</p>
+    </footer>
+  </div>
+   
+  <script defer src = 'top-part.js'></script>
+</body>
