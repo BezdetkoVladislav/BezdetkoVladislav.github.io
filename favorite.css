@@ -63,7 +63,10 @@ body {
         line-height: 40px !important;
     }
     #main-content {
-        padding: 20px;
+        padding: 20px !important;
+    }
+    #add-screen{
+        width: 95% !important;
     }
 }
 
@@ -287,7 +290,7 @@ body {
     margin: auto;
     right: 0;
     min-width: none;
-    width: 95%;
+    width: 700px;
     height: 750px;
     border: 1px solid black;
     border-radius: 35px;
