@@ -1,16 +1,13 @@
-<!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Website for ordering tickets on films">
-  <link rel="icon" type="image/x-icon" href="image3Logo.webp">
-  <title>Restkino</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="top-bar.css" type="text/css">
   <link rel="stylesheet" href="Main-page.css" type="text/css">
   <link rel="stylesheet" href="bootstrap.css" type="text/css">
   <script src = 'madoca.js'></script>
+  <title>Browser</title>
 </head>
 
 
@@ -18,25 +15,25 @@
     <div id ='root'>
       <div id = 'top-menu'>
         <div id = 'field-bar'>
-          <img src = "Group1menbut.webp" alt="" style = "margin-left: 28px;">
-          <a href='Main-page.html'>Фільми</a>
-          <a href='Main-page.html'>Кінотеатри</a>
-          <a  href='Main-page.html'>Технології</a>
-          <a href='Main-page.html'>Про нас</a>
+          <img src = "Group 1menbut.png" style = "margin-left: 28px;">
+          <a href='Films.html'>Фільми</a>
+          <a href='Actor-creator.html'>Кінотеатри</a>
+          <a  href=''>Технології</a>
+          <a href="Users.html">Про нас</a>
         </div>
         <div id = 'logo-bar'>
-            <img src = 'image3Logo.webp' alt="" style = 'max-width: 180px; max-height: 87px;'>
+            <img src = 'image 3Logo.png' style = 'max-width: 180px; max-height: 87px;'>
         </div>
         <div id = 'user-bar'>
             <div id = 'for_city' class="for_city" style="display: flex; height: 100%; align-items: center; align-content: center; position: relative;">
               <p style="margin:0 10px 0 0;">м.Одеса, вул.Так, 12</p>
-              <img src="Group2dugaa.webp" alt="" style="height: 14px;">
+              <img src="Group 2dugaa.png" style="height: 14px;">
               <div id = 'city-drop' class='city-drop'>
                 <div style="display: block; justify-content: space-between;">
                   <p style="color:black; font-weight: bold;">Оберіть місто</p>
                   <div class="input-group mb-3">
                     <input type="text" class="form-control" placeholder="Місто"  list = 'cities'>
-                    <datalist id = 'cities2'>
+                    <datalist id = 'cities'>
                       <option>м.Одеса</option> 
                       <option>м.Київ</option>
                       <option>м.Львів</option>
@@ -46,29 +43,29 @@
                 </div>
                 <div style="border: 1px solid black; width: 100%; height: auto; margin-top: 10px; height: 67%; overflow: auto; overflow-y: scroll;">
                   <table style="overflow-y: auto; overflow-x: hidden; width: 100%;">
-                    <tbody id = "city-table2">
+                    <tbody id = "city-table">
                       <tr>
-                        <td style='font-family: "Kurale-Regular", serif; font-size: 24px;'>Таїрово</td>
+                        <td style='font-family: "Kurale-Regular", serif; font-size: 24px;'>Таїрово</th>
                       </tr>
                       <tr>
-                        <td style='font-family: "Kurale-Regular", serif; font-size: 24px;'>Котовський</td>
+                        <td style='font-family: "Kurale-Regular", serif; font-size: 24px;'>Котовський</th>
                       </tr>
                       <tr>
-                        <td style='font-family: "Kurale-Regular", serif; font-size: 24px;'>Плаза</td>
+                        <td style='font-family: "Kurale-Regular", serif; font-size: 24px;'>Плаза</th>
                       </tr>
                     </tbody>
                   </table>
                 </div>
               </div>
             </div>
-            <a href="Registration.html">Вхід</a>
-            <a href="Registration.html">Реєстрація</a>
-            <img src="UserLogouserlogo.webp" alt="">
+            <a>Вхід</a>
+            <a>Реєстрація</a>
+            <img src="UserLogouserlogo.png">
         </div>
       </div>
       <div id = 'side-nav-bar'>
         <div style="display: flex; align-items: center;">
-          <img src="DecorElementsFilters1.webp" alt="" style="margin-left: 28px;">
+          <img src="DecorElementsFilters1.png" style="margin-left: 28px; padding-top: 10px;">
           <h2>Меню навігації</h2>
         </div>
         <ul>
@@ -81,8 +78,8 @@
       <div id = 'main-content'>
         <div class="scroll-bar">
           <div id = 'carouselInner'>
-            <img src = 'Group3.webp' alt="" style="width: 100%; height: 100%;">
-            <img src = 'Group3.webp' alt="" style="width: 100%; height: 100%;">
+            <img src = 'Group 3.png' style="width: 100%; height: 100%;">
+            <img src = 'Group 3.png' style="width: 100%; height: 100%;">
           </div>
           <button class="scroll-button" id = 'left-butt' style="top:calc(50% - 25px); left: 5px;" onclick=prevSlide()>&#x3c;</button>
           <button class="scroll-button" id = 'right-butt' style="top:calc(50% - 25px); right: 5px;" onclick=nextSlide()>&#x3e;</button>
@@ -91,7 +88,7 @@
           <div id = 'filters' style="display: flex; flex-direction: row; flex-wrap: wrap;">
             <div style="display: flex;">
               <p style="color: black; margin: 0 15px 0 0; font-family: 'Kurale-Regular'; font-weight: bold;">Фільтри</p>
-              <img src = 'DecorElementsFilters.webp' alt="" style ="width: 31px; height: 28px;">
+              <img src = 'DecorElementsFilters.png' style ="width: 31px; height: 28px;">
             </div>
             <form action="#">
               <select name="Жанр" id="Жанр">
@@ -110,7 +107,7 @@
               </select>
             </form>
             <form action="#">
-              <select name="Формат залу" id="Формат_залу">
+              <select name="Формат залу" id="Формат залу">
                 <option value="" disabled selected>Формат залу</option>
                 <option value="Standart">Standart</option>
                 <option value="Lux">Lux</option>
@@ -126,7 +123,7 @@
               </select>
             </form>
             <form action="#">
-              <select name="Час сеансу" id="Час_сеансу">
+              <select name="Час сеансу" id="Час сеансу">
                 <option value="" disabled selected>Час сеансу</option>
                 <option value="12:00-15:00">12:00-15:00</option>
                 <option value="15:00-18:00">15:00-18:00</option>
@@ -142,8 +139,8 @@
               </select>
             </form>
             <div style="display: inline; white-space: nowrap; margin-left: 10px; margin-right: 15px; ">
-              <input id = 'checkerbox' type="checkbox" class="checkbox-round">
-              <label for = 'checkerbox' style="margin: 0; font-size: 24px; font-family: 'seoulhangangCbl'; font-weight: bold; white-space: nowrap;">За вподобанями</label><br>
+              <input type="checkbox" class="checkbox-round">
+              <label for="Вподобання" style="margin: 0; font-size: 24; font-family: 'seoulhangangCbl'; font-weight: bold; white-space: nowrap;">За вподобанями</label><br>
             </div>
           </div>
           <div class = "tag-list filter-tags">
@@ -155,7 +152,7 @@
           <p style="margin:0 20px 0 0;">Оберіть кінотеатр:</p>
           <div id = 'for_city2'  class='for_city' style="display: flex; height: 100%; align-items: center; align-content: center;">
             <p style="margin:0 10px 0 0;">м.Одеса, вул.Так, 12</p>
-            <img src="FuncElementsadsasd.webp" alt="" style="height: 14px;">
+            <img src="FuncElementsadsasd.png" style="height: 14px;">
             <div id = 'city-drop2'  class='city-drop' style="margin-top: 10px; width: 100%; right:0;">
               <div style="display: block; justify-content: space-between;">
                 <p style="color:black; font-weight: bold;">Оберіть місто</p>
@@ -173,13 +170,13 @@
                 <table style="overflow-y: auto; overflow-x: hidden; width: 100%;">
                   <tbody id = "city-table">
                     <tr>
-                      <td style='font-family: "Kurale-Regular", serif; font-size: 24px;'>Таїрово</td>
+                      <td style='font-family: "Kurale-Regular", serif; font-size: 24px;'>Таїрово</th>
                     </tr>
                     <tr>
-                      <td style='font-family: "Kurale-Regular", serif; font-size: 24px;'>Котовський</td>
+                      <td style='font-family: "Kurale-Regular", serif; font-size: 24px;'>Котовський</th>
                     </tr>
                     <tr>
-                      <td style='font-family: "Kurale-Regular", serif; font-size: 24px;'>Плаза</td>
+                      <td style='font-family: "Kurale-Regular", serif; font-size: 24px;'>Плаза</th>
                     </tr>
                   </tbody>
                 </table>
@@ -189,10 +186,10 @@
         </div>
         <div id = 'films'>
           <div class="key-film">
-            <img src="jonathan-kemper-1HHrdIoLFpU-unsplash1.webp" alt=""> 
+            <img src="jonathan-kemper-1HHrdIoLFpU-unsplash 1.png"> 
             <div> 
               <div class= 'film-name'>
-                <h1 style="color: #333333;">Дюна: Частина два</h1>
+                <h1 >L.yf: Частина два</h1>
               </div>
               <div class = "tag-list key-tags">
                 <div><p>Екшн</p></div>
@@ -216,7 +213,7 @@
                 </div>
               </div>
               <div class = "rozklad-section">
-                <a >Розклад сеансів:</a>
+                <a>Розклад сеансів:</a>
                 <div class="rozklad-list">
                   <div class="seans"><p>180 грн</p><a>12:00</a><p>2D, Lux</p></div>
                   <div class="seans"><p>180 грн</p><a>15:00</a><p>3D, Lux</p></div>
@@ -231,7 +228,7 @@
           </div>
           <div class="mobile-key film">
             <div class="hover-section">
-              <img src="jonathan-kemper-1HHrdIoLFpU-unsplash1.webp" alt=""> 
+              <img src="jonathan-kemper-1HHrdIoLFpU-unsplash 1.png"> 
               <div class="in-hover">
                 <div class = "tag-list film-tags">
                   <div><p>Екшн</p></div>
@@ -257,7 +254,7 @@
               </div>
             </div>
             <div class = "rozklad-section">
-              <a href = 'Main-page.html'>Розклад сеансів:</a>
+              <a href = 'main-page.js'>Розклад сеансів:</a>
               <div class="rozklad-list">
                 <div class="seans"><p>180 грн</p><a>12:00</a><p>2D, Lux</p></div>
                 <div class="seans"><p>180 грн</p><a>15:00</a><p>3D, Lux</p></div>
@@ -271,7 +268,7 @@
           </div>
           <div class="film">
             <div class="hover-section">
-              <img src="Stocksy_txp226f62b2aNe300_Medium_45821932.webp" alt="">
+              <img src="Stocksy_txp226f62b2aNe300_Medium_4582193 2.png">
               <div class="in-hover">
                 <div class = "tag-list film-tags">
                   <div><p>Екшн</p></div>
@@ -297,7 +294,7 @@
               </div>
             </div>
             <div class = "rozklad-section">
-              <a href = 'Main-page.html'>Розклад сеансів:</a>
+              <a>Розклад сеансів:</a>
               <div class="rozklad-list">
                 <div class="seans"><p>180 грн</p><a>12:00</a><p>2D, Lux</p></div>
                 <div class="seans"><p>180 грн</p><a>15:00</a><p>3D, Lux</p></div>
@@ -308,7 +305,7 @@
           </div>
           <div class="film">
             <div class="hover-section">
-              <img src="Stocksy_txp226f62b2aNe300_Medium_45821933.webp" alt="">
+              <img src="Stocksy_txp226f62b2aNe300_Medium_4582193 3.png">
               <div class="in-hover">
                 <div class = "tag-list film-tags">
                   <div><p>Екшн</p></div>
@@ -334,7 +331,7 @@
               </div>
             </div>
             <div class = "rozklad-section">
-              <a href = 'Main-page.html'>Розклад сеансів:</a>
+              <a>Розклад сеансів:</a>
               <div class="rozklad-list">
                 <div class="seans"><p>180 грн</p><a>12:00</a><p>2D, Lux</p></div>
                 <div class="seans"><p>180 грн</p><a>15:00</a><p>3D, Lux</p></div>
@@ -345,7 +342,7 @@
           </div>
           <div class="film">
             <div class="hover-section">
-              <img src="Stocksy_txp226f62b2aNe300_Medium_45821931.webp" alt="">
+              <img src="Stocksy_txp226f62b2aNe300_Medium_4582193 1.png">
               <div class="in-hover">
                 <div class = "tag-list film-tags">
                   <div><p>Екшн</p></div>
@@ -371,7 +368,7 @@
               </div>
             </div>
             <div class = "rozklad-section">
-              <a href = 'Main-page.html'>Розклад сеансів:</a>
+              <a>Розклад сеансів:</a>
               <div class="rozklad-list">
                 <div class="seans"><p>180 грн</p><a>12:00</a><p>2D, Lux</p></div>
                 <div class="seans"><p>180 грн</p><a>15:00</a><p>3D, Lux</p></div>
@@ -382,7 +379,7 @@
           </div>
           <div class="film">
             <div class="hover-section">
-              <img src="image1.webp" alt="">
+              <img src="image 1.png">
               <div class="in-hover">
                 <div class = "tag-list film-tags">
                   <div><p>Екшн</p></div>
@@ -408,7 +405,7 @@
               </div>
             </div>
             <div class = "rozklad-section">
-              <a href = 'Main-page.html'>Розклад сеансів:</a>
+              <a>Розклад сеансів:</a>
               <div class="rozklad-list">
                 <div class="seans"><p>180 грн</p><a>12:00</a><p>2D, Lux</p></div>
                 <div class="seans"><p>180 грн</p><a>15:00</a><p>3D, Lux</p></div>
@@ -419,7 +416,7 @@
           </div>
           <div class="film">
             <div class="hover-section">
-              <img src="Stocksy_txp226f62b2aNe300_Medium_45821936.webp" alt="">
+              <img src="Stocksy_txp226f62b2aNe300_Medium_4582193 6.png">
               <div class="in-hover">
                 <div class = "tag-list film-tags">
                   <div><p>Екшн</p></div>
@@ -445,7 +442,7 @@
               </div>
             </div>
             <div class = "rozklad-section">
-              <a href = 'Main-page.html'>Розклад сеансів:</a>
+              <a>Розклад сеансів:</a>
               <div class="rozklad-list">
                 <div class="seans"><p>180 грн</p><a>12:00</a><p>2D, Lux</p></div>
                 <div class="seans"><p>180 грн</p><a>15:00</a><p>3D, Lux</p></div>
@@ -456,7 +453,7 @@
           </div>
           <div class="film">
             <div class="hover-section">
-              <img src="Stocksy_txp226f62b2aNe300_Medium_45821935.webp" alt="">
+              <img src="Stocksy_txp226f62b2aNe300_Medium_4582193 5.png">
               <div class="in-hover">
                 <div class = "tag-list film-tags">
                   <div><p>Екшн</p></div>
@@ -482,7 +479,7 @@
               </div>
             </div>
             <div class = "rozklad-section">
-              <a href = 'Main-page.html'>Розклад сеансів:</a>
+              <a>Розклад сеансів:</a>
               <div class="rozklad-list">
                 <div class="seans"><p>180 грн</p><a>12:00</a><p>2D, Lux</p></div>
                 <div class="seans"><p>180 грн</p><a>15:00</a><p>3D, Lux</p></div>
