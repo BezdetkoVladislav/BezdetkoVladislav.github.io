@@ -95,6 +95,9 @@ body {
     align-items:center;
     justify-content: space-between;
     gap: 10px 20px;
+    form {
+        display: none;
+    }
 }
 #filters > div:first-child:hover {
     cursor: pointer;
