@@ -71,6 +71,8 @@ body {
     z-index: 3;
     min-width: 150px;
     min-height: 69px;
+    width: 150px;
+    height: 69px;
 }
 
 .for_city:hover {
@@ -122,6 +124,12 @@ body {
     transition: 1s;
     top: 0;
     bottom: 0;
+    div > img{
+        min-width: 31px;
+        min-height: 28px;
+        width: 31px;
+        height: 28px;
+    }
     ul {
         list-style-type: none;
         padding-left: 0;
