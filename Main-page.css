@@ -14,7 +14,7 @@ select {
     padding: 4px 4px 3px 5px;
     border-radius: 15px;
     color: #262626;
-    font-size: 24 !important;
+    font-size: 24px !important;
     font-family: "Kurale-Regular", serif !important;
     font-weight: bold !important;
   }
@@ -22,7 +22,7 @@ select {
 option {
     color: #262626;
     padding: 0px 15px 0px 7px;
-    font-size: 24 !important;
+    font-size: 24px !important;
     font-family: "Kurale-Regular", serif !important;
     font-weight: bold !important;
 }
@@ -343,7 +343,7 @@ body {
     display: block;
     font-weight: bold;
     margin-top: 5px; 
-    font-size: 22; 
+    font-size: 22px; 
     margin-bottom: 8px;
     color: #000;
     font-family: 'Kurale-Regular', serif;
