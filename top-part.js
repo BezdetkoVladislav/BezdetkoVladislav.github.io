@@ -59,6 +59,7 @@ function close_side() {
 }
 cover_window.addEventListener('click', function(){city_drop.style.display = 'none';for_city_drop.style.display = 'none'; } )
 for_city.addEventListener('click', function(ev){ev.stopPropagation(); drop_city(city_drop);})
+window.addEventListener('load', check_for_overflow)
 window.addEventListener('resize', check_for_overflow)
 side_menu.addEventListener('click', open_side)
 side_menu_second.addEventListener('click', close_side)
