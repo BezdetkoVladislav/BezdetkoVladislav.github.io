@@ -36,7 +36,7 @@ body {
 #top-menu > div > a, p, h1 {
     color: #FFC774; 
     font-family: 'Kurale-Regular', serif;
-    font-size: 24;
+    font-size: 24px;
 }
 #top-menu > div {
     display: flex;
