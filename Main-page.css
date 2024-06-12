@@ -332,6 +332,7 @@ body {
 }
 
 .info-list > div > p{
+    margin-top: 0px;
     font-size: 18px;
     color: black;
     margin-bottom: 5px;
