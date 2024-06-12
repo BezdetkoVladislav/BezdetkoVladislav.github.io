@@ -56,8 +56,8 @@ body {
 }
 #field-bar > img {
     z-index: 3;
-    width: 31px;
-    height: 28px;
+    min-width: 31px;
+    min-height: 28px;
 }
 #logo-bar{
     align-items:end;
@@ -69,8 +69,8 @@ body {
     top: 15px;
     padding: 0 15px 0 15px;
     z-index: 3;
-    width: 150px;
-    height: 69px;
+    min-width: 150px;
+    min-height: 69px;
 }
 
 .for_city:hover {
