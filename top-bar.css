@@ -68,8 +68,19 @@ body {
     padding: 0 15px 0 15px;
     z-index: 3;
 }
+
 .for_city:hover {
     cursor: pointer;
+}
+
+.for_city > img {
+    width: 24px;
+    height: 14px;
+}
+
+#user-bar > img {
+    width: 47px;
+    height: 47px;
 }
 
 #user-bar{
@@ -186,6 +197,7 @@ body {
 #city-table > tr td{
     border-left: 0px;
 }
+
 
 footer {
     position: relative;
