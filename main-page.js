@@ -85,5 +85,6 @@ function openfilters() {
   }
 }
 
+window.addEventListener('load', hideforms)
 window.addEventListener('resize', hideforms)
 filters.addEventListener('click', openfilters)

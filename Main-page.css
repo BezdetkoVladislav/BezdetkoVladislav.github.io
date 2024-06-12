@@ -32,7 +32,7 @@ form {
 
 body {
     background-image: url('Background.png'), linear-gradient(to right, #262626, #262626);
-      background-size: cover;
+    background-size: auto;
 }
 
 #root {
@@ -123,6 +123,15 @@ body {
     #filters > div:first-child {
         width: 100%;
     }
+    .mobile-key {
+        display: block !important; 
+    }
+    .key-film {
+        display: none !important;
+    }
+    .scroll-bar {
+        display: none !important;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -143,14 +152,6 @@ body {
     display: none;
 }
 
-@media screen and (max-width: 820px) {
-    .mobile-key {
-        display: block !important; 
-    }
-    .key-film {
-        display: none !important;
-    }
-}
 #for-city-bar {
     display: none;
     justify-content: space-between;
