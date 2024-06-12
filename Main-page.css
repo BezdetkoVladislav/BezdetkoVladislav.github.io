@@ -31,7 +31,7 @@ form {
 }
 
 body {
-    background-image: url('Background.avif'), linear-gradient(to right, #262626, #262626);
+    background-image: url('Background.webp'), linear-gradient(to right, #262626, #262626);
     background-size: auto;
 }
 
