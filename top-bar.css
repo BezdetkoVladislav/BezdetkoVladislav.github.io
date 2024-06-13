@@ -203,7 +203,7 @@ body {
 }
 
 #city-table > tr td{
-    padding: 10px 0px 5px 5px;
+    padding: 5px 0px 5px 5px;
     font-size: 20px;
     border-collapse: collapse;
     border: 1px solid black;
