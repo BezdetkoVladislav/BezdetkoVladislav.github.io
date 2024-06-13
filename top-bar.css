@@ -193,6 +193,11 @@ body {
         margin-bottom: 0;
     }
 }
+#city-table2 {
+    td {
+        padding-left: 10px;
+    }
+}
 .city-drop:hover{
     cursor: default;
 }
